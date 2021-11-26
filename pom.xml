@@ -3,10 +3,10 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>net.cyberflame</groupId>
-    <artifactId>plugin</artifactId>
+    <groupId>com.setupsafari</groupId>
+    <artifactId>welcomemessage</artifactId>
     <version>1.0.0</version>
-    <name>plugin</name>
+    <name>WelcomeMessage</name>
     <repositories>
         <repository>
             <id>spigot-repo</id>

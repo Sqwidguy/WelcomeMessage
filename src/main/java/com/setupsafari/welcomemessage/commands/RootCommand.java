@@ -1,11 +1,11 @@
-package net.cyberflame.plugin.commands;
+package com.setupsafari.welcomemessage.commands;
 
+import com.setupsafari.welcomemessage.Main;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import net.cyberflame.plugin.Main;
 // remember to register this in plugin.yml
 public class RootCommand implements CommandExecutor {
     @Override

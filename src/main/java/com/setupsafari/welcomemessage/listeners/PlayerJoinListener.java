@@ -1,11 +1,10 @@
-package net.cyberflame.plugin.listeners;
+package com.setupsafari.welcomemessage.listeners;
 
+import com.setupsafari.welcomemessage.Main;
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-
-import net.cyberflame.plugin.Main;
 
 public class PlayerJoinListener implements Listener {
     @EventHandler

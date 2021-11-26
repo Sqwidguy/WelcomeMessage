@@ -1,6 +1,6 @@
 name: ${project.name}
-main: net.cyberflame.plugin.Plugin
+main: com.setupsafari.welcomemessage.Main
 version: ${project.version}
-description: Plugin
+description: This plugin mekes it so theres a meaning to your life
 website: https://cyberfla.me/
 author: CyberFlame

@@ -1,12 +1,12 @@
-package net.cyberflame.plugin;
+package com.setupsafari.welcomemessage;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
-import net.cyberflame.plugin.commands.RootCommand;
-import net.cyberflame.plugin.listeners.PlayerJoinListener;
-import net.cyberflame.plugin.tasks.Task;
+import com.setupsafari.welcomemessage.commands.RootCommand;
+import com.setupsafari.welcomemessage.listeners.PlayerJoinListener;
+import com.setupsafari.welcomemessage.tasks.Task;
 
 public class Main extends JavaPlugin {
     

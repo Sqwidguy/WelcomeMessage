@@ -1,6 +1,6 @@
-package net.cyberflame.plugin.tasks;
+package com.setupsafari.welcomemessage.tasks;
 
-import net.cyberflame.plugin.Main;
+import com.setupsafari.welcomemessage.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.scheduler.BukkitRunnable;
 
