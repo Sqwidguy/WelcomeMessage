@@ -10,15 +10,24 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.jetbrains.annotations.NotNull;
 
 public class PlayerJoinListener implements Listener {
+    
+    final Main instance = Main.getInstance();
+    
+    if(!instance.getConfig().getBoolean("modules.join") && !instance.getConfig().getBoolean("modules.motd")) return;
+    
     @EventHandler(ignoreCancelled = true)
     public void onPlayerJoin(final @NotNull PlayerJoinEvent event) {
-        @NotNull final String joinMessage = Main.getInstance().getConfig().getString("messages.join-message");
-        @NotNull final String motdMessage = Main.getInstance().getConfig().getString("messages.motd-message");
 
         @NotNull final Player player = event.getPlayer();
-        Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&',
+        if(instance.getConfig().getBoolean("modules.join") {
+            @NotNull final String joinMessage = Main.getInstance().getConfig().getString("messages.join-message");
+            Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&',
                 joinMessage.replaceAll("%player%", player.getDisplayName())));
-        player.sendMessage(ChatColor.translateAlternateColorCodes('&',
-                motdMessage.replaceAll("%player%    ", player.getDisplayName())));
+        }
+        if(instance.getConfig().getBoolean("modules.motd") {
+            @NotNull final String motdMessage = Main.getInstance().getConfig().getString("messages.motd-message");
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&',
+                motdMessage.replaceAll("%player%", player.getDisplayName())));
+        }
     }
 }
