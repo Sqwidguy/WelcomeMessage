@@ -1,3 +1,3 @@
 messages:
   join-message: "&a%player% has joined." #Note you must write it in the "
-  motd-message: "&6Welcome, &a%player%&6!" #Note dont be a retard and type outside  the "
+  motd-message: "&6Welcome, &a%player%&6!" #Note you must write it in the "

@@ -7,15 +7,16 @@ import com.setupsafari.welcomemessage.listeners.PlayerJoinListener;
 
 public class Main extends JavaPlugin {
 
+    private static Main instance;
+
     @Override
     public void onEnable() {
         this.saveDefaultConfig();
-
+        Main.instance = this;
         Bukkit.getPluginManager().registerEvents(new PlayerJoinListener(), this);
 
     }
 
-    private static Main instance;
 
     public static Main getInstance () {
         return Main.instance;
