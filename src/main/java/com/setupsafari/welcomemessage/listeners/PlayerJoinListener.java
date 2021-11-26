@@ -19,6 +19,6 @@ public class PlayerJoinListener implements Listener {
         Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&',
                 joinMessage.replaceAll("%player%", player.getDisplayName())));
         player.sendMessage(ChatColor.translateAlternateColorCodes('&',
-                motdMessage.replaceAll("%player", player.getDisplayName())));
+                motdMessage.replaceAll("%player%", player.getDisplayName())));
     }
 }
