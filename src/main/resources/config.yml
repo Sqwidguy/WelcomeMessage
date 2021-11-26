@@ -1,6 +1,3 @@
 messages:
-  from-command: "&eHello world from Command."
-  from-listener: "&aHello world from Listener."
-  from-task: "&dHello world from Task."
-
-task-repeat-every: 3 # in seconds
+  join-message: "&a%player% has joined." #Note you must write it in the "
+  motd-message: "&6Welcome, &a%player%&6!" #Note dont be a retard and type outside  the "
