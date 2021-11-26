@@ -1,0 +1,6 @@
+name: WelcomeMessage
+main: com.setupsafari.welcomemessage.Main
+version: 1.0.0
+description: on join it will announce the player has joined.
+website: https://setupsafari.com/
+author: Squidguy
