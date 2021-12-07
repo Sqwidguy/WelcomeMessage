@@ -13,8 +13,6 @@ public class PlayerJoinListener implements Listener {
     
     final Main instance = Main.getInstance();
     
-    if(!(instance.getConfig().getBoolean("modules.join")) && !(instance.getConfig().getBoolean("modules.motd"))) return;
-    
     @EventHandler(ignoreCancelled = true)
     public void onPlayerJoin(final @NotNull PlayerJoinEvent event) {
 
