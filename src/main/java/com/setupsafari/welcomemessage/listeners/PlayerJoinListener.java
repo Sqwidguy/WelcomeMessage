@@ -13,18 +13,18 @@ public class PlayerJoinListener implements Listener {
     
     final Main instance = Main.getInstance();
     
-    if(!instance.getConfig().getBoolean("modules.join") && !instance.getConfig().getBoolean("modules.motd")) return;
+    if(!(instance.getConfig().getBoolean("modules.join")) && !(instance.getConfig().getBoolean("modules.motd"))) return;
     
     @EventHandler(ignoreCancelled = true)
     public void onPlayerJoin(final @NotNull PlayerJoinEvent event) {
 
         @NotNull final Player player = event.getPlayer();
-        if(instance.getConfig().getBoolean("modules.join") {
+        if(instance.getConfig().getBoolean("modules.join")) {
             @NotNull final String joinMessage = Main.getInstance().getConfig().getString("messages.join-message");
             Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&',
                 joinMessage.replaceAll("%player%", player.getDisplayName())));
         }
-        if(instance.getConfig().getBoolean("modules.motd") {
+        if(instance.getConfig().getBoolean("modules.motd")) {
             @NotNull final String motdMessage = Main.getInstance().getConfig().getString("messages.motd-message");
             player.sendMessage(ChatColor.translateAlternateColorCodes('&',
                 motdMessage.replaceAll("%player%", player.getDisplayName())));
