@@ -13,8 +13,11 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         this.saveDefaultConfig();
         Main.instance = this;
-        Bukkit.getPluginManager().registerEvents(new PlayerJoinListener(), this);
-
+        if(!(this.getConfig().getBoolean("modules.join")) && !(this.getConfig().getBoolean("modules.motd"))){
+            this.getLogger().info("No modules enabled, disabling plugin.");
+            this.getPluginLoader().disablePlugin(this);
+        }
+        else Bukkit.getPluginManager().registerEvents(new PlayerJoinListener(), this);
     }
 
 
